@@ -1,0 +1,45 @@
+/* CSS */
+
+html, body{
+	width: 100%; height: 100%;
+	margin: 0px; padding: 0px;
+	background-color: floralwhite;
+}
+body {
+	margin: auto;
+}
+#mapid{
+	margin: 0px; padding: 0px;
+	width: 480px; height: 320px;
+	background-color: gray;
+}
+
+#my-back {
+	width: 100%;
+	height: 100%;
+	background-color: #dc143c;
+	position: relative;
+	position: absolute;
+	/*z-index: 3;*/
+}
+
+#my-canvas{
+
+	position: absolute;
+	z-index: 1;
+}
+
+#my-content{
+
+	/*position: relative;*/
+	position: absolute;
+	z-index: 2;
+
+	width: 400px;
+	height: 500px;
+	text-align: center;
+	margin: 100px auto;
+	border: 2px solid #dc143c;
+	border-radius: 6px;
+	background-color:cornsilk;
+}

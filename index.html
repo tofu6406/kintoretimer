@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>筋トレタイマー</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="//unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin/>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xxjapp/xdialog@3/xdialog.min.css">
+	<link rel="stylesheet" href="./css/custom.css">
+	<script src="./libs/p5.min.js"></script>
+	<script src="./libs/p5.sound.min.js"></script>
+	<script src="./libs/planck.min.js"></script>
+	<script src="./libs/p5play.js"></script>
+	<!-- Sketch -->
+	<script src="./sketch.js"></script>
+	<script>
+		(function(d) {
+		  var config = {
+			kitId: 'fdz3sbk',
+			scriptTimeout: 3000,
+			async: true
+		  },
+		  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		})(document);
+	</script>
+</head>
+
+<body>
+	<div id="my-back">
+	<div id="my-canvas"> </div>
+		
+		 <!-- <div id="my-back"> -->
+		
+		
+			<div id="my-content">
+			<h1>筋トレタイマー</h1>
+
+			<p id="p1">
+				トレーニングタイム:<input type="text" id="input_a">秒
+			</p>
+			<p id="p2">
+				インターバル<br>(休憩時間):<input type="text" id="input_b">秒
+			</p>
+			<p id="p3">
+				繰り返し回数:<input type="text" id="input_c">回
+				</p>
+
+
+				<p id="msg_info">*</p>
+				<p id="my_count">*</p>
+				<p id="my_counter">*</p>
+
+				<p>
+					<!--  <img id="#my_egg" src="./images/egg_01.png" alt="Default Image"> -->
+				</p>
+
+				<p>
+					<button id="btn">トレーニング準備完了</button>
+				</p>
+				<p>
+					<button id="re">リセットボタン</button>
+				</p>
+			</div>
+		</div>
+		<!-- </div> -->
+	
+	
+	
+	
+	<!-- JavaScript -->
+	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+	<script src="//unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin></script>
+	<script src="//cdn.jsdelivr.net/gh/xxjapp/xdialog@3/xdialog.min.js"></script>
+	<script src="./utility.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
